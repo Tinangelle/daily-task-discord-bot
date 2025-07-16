@@ -2,7 +2,8 @@ name: Daily Task Dispatcher
 
 on:
   schedule:
-    - cron: '0 17 * * *'  # UTC 17:00 = 北京时间次日1:00
+    - cron: '0 17 * * *'  # UTC时间17:00=北京时间1:00（次日）
+    - cron: '*/5 * * * *'  # 测试用：每5分钟触发一次（调试后删除）
   workflow_dispatch:
 
 jobs:
