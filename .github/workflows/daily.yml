@@ -2,7 +2,7 @@ name: Daily Task Dispatcher
 
 on:
   schedule:
-    - cron: '22 13 * * *'  # UTC 13:22 = UTC+8 的 21:22
+    - cron: '0 17 * * *'  # UTC 17:00 = 北京时间次日1:00
   workflow_dispatch:
 
 jobs:
